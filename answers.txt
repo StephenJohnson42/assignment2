@@ -58,3 +58,9 @@ E.
 
 (j)
 	100 developers would benefit from the Dictator and Lieutenants workflow more than the latter because there is a clean line of command and only one person can change the repository. This means there will likely be fewer conflicts overall. It becomes harder for an integration manager to merge all the developers public repositories once the number of employees reaches a certain point.
+
+
+5.
+	The driving simulater is using both encapsulation and polymorphism. The simulater is using encapsulation by having classes that encompass functions and by separating the member data and functions into different levels of protection. For example, the car.h file has an engine size in the protected field while functions to be called by the user are still available. Encapsulation is all about grouping and different levels of protection
+
+	Polymorphism is being used through the inheritance of virtual functions from both the vehicle and poweredvehicle base classes. Functions that are polymorphic have the same calling name, but do different things. In each of the header files there is a toString function that prints something slightly different than the rest. The bicycle makes a bicycle string while the car makes a car string, but both functions are named toString. The main function that is being displayed in this project is the mileageEstimate. This makes sense because all these vehicles have to be going different speeds, but the common function name cuts down on code.
