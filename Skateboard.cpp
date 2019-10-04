@@ -6,7 +6,7 @@
 #include <stdio.h>     
 #include <stdlib.h>     
 #include <time.h>     
-#include <string>   
+//#include <string>   
 #include <cmath>
 
 Skateboard::Skateboard(string brand, string model) {
@@ -16,7 +16,7 @@ Skateboard::Skateboard(string brand, string model) {
 
 Skateboard::~Skateboard() = default;
 
-double Bicycle::mileageEstimate(double timex) {
+double Skateboard::mileageEstimate(double timex) {
 	srand (time(NULL));
 	int x = rand() % 5 + 1;
 	double y = 0;
@@ -25,7 +25,7 @@ double Bicycle::mileageEstimate(double timex) {
 
     double mileage = y * timex;
     if(timex > 25 && timex < 250){
-    	double ranAmount = rand() % (timex / .3333) + 1;
+    	double ranAmount = rand() % (int)(timex / .3333) + 1;
 	    mileage = mileage + ranAmount ;
 	}
 	mileage = floor(mileage);

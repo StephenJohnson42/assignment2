@@ -6,17 +6,17 @@
 #include <stdio.h>     
 #include <stdlib.h>     
 #include <time.h>     
-#include <string>   
+//#include <string>   
 #include <cmath>
 
-Skateboard::Skateboard(string brand, string model) {
+Scooter::Scooter(string brand, string model) {
 	setBrand(brand);
     setModel(model);
 }
 
-Skateboard::~Skateboard() = default;
+Scooter::~Scooter() = default;
 
-double Bicycle::mileageEstimate(double timex) {
+double Scooter::mileageEstimate(double timex) {
 	srand (time(NULL));
 	int x = rand() % 5 + 1;
 	double y = 0;
@@ -24,15 +24,16 @@ double Bicycle::mileageEstimate(double timex) {
 	y = x / z;
 
     double mileage = y * timex;
-    if(timex % 2 == 0){
-    	double ranAmount = rand() % (timex / .5) + 1;
+    int compare = floor(timex);
+    if(compare % 2 == 0){
+    	double ranAmount = rand() % (int)(timex / .5) + 1;
 	    mileage = mileage + ranAmount ;
 	}
 	mileage = floor(mileage);
     return mileage;
 }
 
-string Skateboard::toString() {
+string Scooter::toString() {
     string s = "-> Scooter\n\t";
     return "-> Scooter\n" + Vehicle::toString();
 }

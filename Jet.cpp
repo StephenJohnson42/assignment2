@@ -22,7 +22,6 @@ Jet::Jet(string brand, string model, string fuelType, int numEngines) {
 Jet::~Jet() = default;
 
 double Jet::mileageEstimate(double timex) {
-
 	srand (time(NULL));
 	int z = rand() % 100 + 40;
     double mileage = z * timex;
@@ -39,6 +38,7 @@ int Jet::getNumberEngines(){
 }
 
 string Jet::toString() {
+	string temp = std::to_string(getNumberEngines());
     return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Number: " +
-           getNumberEngines();
+           temp;
 }
