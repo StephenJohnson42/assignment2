@@ -14,10 +14,10 @@ private:
 
 public:
 	Jet();
-	Jet(int numEngines);
+	Jet(int numEngines, string fuelType);
 
 	virtual ~Jet();
-	virtual double mileageEstimate(double time);
+	virtual double mileageEstimate(double timex);
     virtual string toString();
     int getNumberEngines();
 
