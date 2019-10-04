@@ -5,6 +5,16 @@
 #include "Jet.h"
 
 
+Jet::Jet() {
+    myEngineSize = 1;
+}
+Jet::Jet(int numEngines, string fuelType) {
+	myEngineSize = 1;
+	numberOfEngines = numEngines;
+	setFuelType(fuelType);
+}
+Jet::~Jet() = default;
+
 int Jet::getNumberEngines(){
 	return numberOfEngines;
 }
