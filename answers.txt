@@ -1,0 +1,60 @@
+E.
+(a)
+	$ git commit
+	[master 6c16399] Add status file and docs folder
+	 1 file changed, 5 insertions(+)
+	 create mode 100644 docs/status.txt
+
+	Stephen Johnson@LAPTOP-OI3TDJPI MINGW64 ~/Desktop/assignment2 (master)
+	$ git push
+	Enumerating objects: 12, done.
+	Counting objects: 100% (12/12), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (7/7), done.
+	Writing objects: 100% (10/10), 1.00 KiB | 342.00 KiB/s, done.
+	Total 10 (delta 3), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+	To https://github.com/StephenJohnson42/assignment2.git
+	   f4975e5..6c16399  master -> master
+
+(b)
+	There are eight total commits and I used the command "git log" 
+
+(c)
+	Date:   Wed Sep 25 18:13:30 2019 -0400
+	I used the command "git log"
+
+(d)
+	Branches are used in git repositories in order to represent the independent line of development.
+
+	They are also used in order to serve as an abstraction for the edit/stage/commit process.
+
+(e)
+	git log gets all the info about the last commits.
+
+	git status shows the working tree status as well as the new or modified files to be committed.
+
+(f)
+	To see the commits where vehicle.h was a file I used this.
+
+	git log --follow Vehicle.h
+
+(g)
+	I would use this modified git log command to find commites with the word file.
+
+	git log --grep ="file"
+
+(h)
+	(I)
+		Inheritance means that objects are able to share member data and functions with eachother. In C++ the derived class inherits the code from the base class. This cuts down on repeated code while promoting reuse.
+
+	(II)
+		Polymorphism means that their are many functions with the same name but each of them performs slightly different. For example, if we had two different car objects that inherited a start function from a vehicle class. The start function would be slightly different for both but still named start.
+	(III)
+		Encapsulation is the bundling and restriction of direct access to certain methods and member data within an object. For example the class structure in c++ has private, public, and protected zones. While also keeping all the functions and member data organized.
+
+(i)
+	The main difference between Dictator and Lieutenants workflow and Integraton Manager workflow is that in Integration Manager workflow each developer has their own public repository they can pull and push from. Integration Manager  workflow then has a manager resolve merging conflicts with the main repository. The Dictator and Lieutenants Workflow only allows the dictator to push to the central repository. While this happens the lieutenants merge all the developers code to be sent to the dictator.
+
+(j)
+	100 developers would benefit from the Dictator and Lieutenants workflow more than the latter because there is a clean line of command and only one person can change the repository. This means there will likely be fewer conflicts overall. It becomes harder for an integration manager to merge all the developers public repositories once the number of employees reaches a certain point.
