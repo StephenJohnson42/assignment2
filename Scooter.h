@@ -7,15 +7,15 @@
 
 #include "Vehicle.h"
 
-class Skateboard : public Vehicle {
+class Scooter: public Vehicle {
 
 private:
 
 
 public:
-    explicit Skateboard();
+    explicit Scooter(string brand, string model);
 
-    virtual ~Skateboard();
+    virtual ~Scooter();
 
     virtual double mileageEstimate(double time);
 
@@ -23,4 +23,4 @@ public:
 };
 
 
-#endif //DRIVINGSIMULATOR_SKATEBOARD_H
+#endif //DRIVINGSIMULATOR_Scooter_H

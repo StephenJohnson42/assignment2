@@ -7,11 +7,14 @@
 #include <stdlib.h>     
 #include <time.h>     
 #include <string>   
+#include <cmath>
 
 Jet::Jet() {
     myEngineSize = 1;
 }
-Jet::Jet(int numEngines, string fuelType) {
+Jet::Jet(string brand, string model, string fuelType, int numEngines) {
+	setBrand(brand);
+    setModel(model);
 	myEngineSize = 1;
 	numberOfEngines = numEngines;
 	setFuelType(fuelType);
@@ -27,6 +30,7 @@ double Car::mileageEstimate(double timex) {
     if (fuelType == "Rocket" && x > 2) {
         mileage += mileage * 0.055;
     }
+    mileage = floor(mileage);
     return mileage;
 }
 

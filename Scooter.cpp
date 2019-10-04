@@ -9,7 +9,9 @@
 #include <string>   
 #include <cmath>
 
-Skateboard::Skateboard() {
+Skateboard::Skateboard(string brand, string model) {
+	setBrand(brand);
+    setModel(model);
 }
 
 Skateboard::~Skateboard() = default;
@@ -22,7 +24,7 @@ double Bicycle::mileageEstimate(double timex) {
 	y = x / z;
 
     double mileage = y * timex;
-    if(timex > 60 && timex < 200){
+    if(timex % 2 == 0){
     	double ranAmount = rand() % (timex / .5) + 1;
 	    mileage = mileage + ranAmount ;
 	}

@@ -14,7 +14,7 @@ private:
 
 public:
 	Jet();
-	Jet(int numEngines, string fuelType);
+	Jet(string brand, string model, string fuelType, int numEngines);
 
 	virtual ~Jet();
 	virtual double mileageEstimate(double timex);

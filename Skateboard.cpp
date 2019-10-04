@@ -1,5 +1,3 @@
-
-
 //
 // Created by Stephen Johnson 10/3/2019
 //
@@ -11,7 +9,9 @@
 #include <string>   
 #include <cmath>
 
-Skateboard::Skateboard() {
+Skateboard::Skateboard(string brand, string model) {
+	setBrand(brand);
+    setModel(model);
 }
 
 Skateboard::~Skateboard() = default;
