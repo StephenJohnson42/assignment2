@@ -10,18 +10,18 @@
 #include <cmath>
 
 Jet::Jet() {
-    myEngineSize = 1;
+    numberOfEngines = 1;
 }
 Jet::Jet(string brand, string model, string fuelType, int numEngines) {
 	setBrand(brand);
     setModel(model);
-	myEngineSize = 1;
+	
 	numberOfEngines = numEngines;
 	setFuelType(fuelType);
 }
 Jet::~Jet() = default;
 
-double Car::mileageEstimate(double timex) {
+double Jet::mileageEstimate(double timex) {
 
 	srand (time(NULL));
 	int z = rand() % 100 + 40;
